@@ -1,10 +1,10 @@
 {
   "name": "image-to-slice",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "scripts": {
     "api": "node server.js",
-    "build": "npm run build:ui && npm run build:plugin-main && npm run build:figma-sim",
+    "build": "node init && npm run build:ui && npm run build:plugin-main && npm run build:figma-sim",
     "build:ui": "node scripts/build-ui-html.js",
     "build:plugin-main": "vite build --config vite.plugin-main.config.js",
     "build:figma-sim": "vite build --config vite.figma-sim.config.js",
